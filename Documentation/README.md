@@ -35,18 +35,4 @@ SOC-Analyst-Project/
 - Install **Elastic Stack** (Elasticsearch, Logstash, Kibana) for SIEM capabilities.
 - Ensure you have **PowerShell** or **Bash** for running simulation and automation scripts.
 
-### Steps to Run
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/SOC-Analyst-Project.git
-   cd SOC-Analyst-Project
-
-Set up Elastic Stack according to the configuration provided in SIEM-Config.
-
-Run attack simulations using the scripts in Attack-Simulations.
-
-Review alerts in Kibana and check for triggered events based on your Sigma rules.
-
-Test the automated response scripts to ensure they work properly.
 

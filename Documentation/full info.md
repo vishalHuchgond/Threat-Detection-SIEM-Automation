@@ -1,11 +1,5 @@
 # SOC Analyst Project - Complete Documentation
 
-**Author:** Alla Krishna Vamsi Reddy (cipherkrish69x)
-**Email:** [krishnavamsi2032@gmail.com](mailto:krishnavamsi2032@gmail.com)
-**LinkedIn:** [linkedin.com/in/krishnavamsireddy](https://www.linkedin.com/in/krishnavamsireddy)
-
----
-
 ## 1. Introduction
 
 The purpose of this project is to simulate a fully functional Security Operations Center (SOC) environment that replicates real-world threat detection, investigation, and response scenarios. With the growing demand for skilled SOC analysts in the cybersecurity industry, this project serves as a comprehensive, hands-on experience that provides learners with a chance to:
@@ -26,7 +20,7 @@ This project is not just theoretical — it combines industry-standard tools, de
 1. **Bridging the Knowledge Gap**: Traditional cybersecurity education often lacks real-world simulation. This project fills that gap.
 2. **Career Preparation**: SOC Analyst is a critical role. This project trains you in log analysis, threat detection, and rule creation — all job-relevant skills.
 3. **Showcase Portfolio**: This project serves as a resume-boosting, GitHub-worthy proof of hands-on expertise.
-4. **Hackathon/Workshop Ready**: Highly modular and extensible for hackathons and workshops.
+4. **Hackathon/Workshop**: Highly modular and extensible for hackathons and workshops.
 
 ### What Makes It Unique
 

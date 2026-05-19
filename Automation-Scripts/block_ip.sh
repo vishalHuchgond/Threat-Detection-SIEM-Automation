@@ -1,5 +1,14 @@
 #!/bin/bash
 
 # Block a malicious IP address using iptables
-iptables -A INPUT -s $1 -j DROP
-echo "IP address $1 has been blocked."
+
+TARGET_IP=$1
+
+if [ -z "$TARGET_IP" ]; then
+    echo "Usage: $0 <IP_ADDRESS>"
+    exit 1
+fi
+
+echo "[*] Adding iptables rule to block IP: $TARGET_IP"
+iptables -A INPUT -s "$TARGET_IP" -j DROP
+echo "[*] IP address $TARGET_IP has been blocked."

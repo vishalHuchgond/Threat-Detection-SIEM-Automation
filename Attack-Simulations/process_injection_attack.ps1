@@ -1,6 +1,17 @@
 # Simulate process injection attack using PowerShell
-$process = Start-Process "cmd.exe" -PassThru
+
+$Payload = "calc.exe"
+
+Write-Host "[*] Starting host process (cmd.exe)..." -ForegroundColor Yellow
+$process = Start-Process "cmd.exe" -WindowStyle Hidden -PassThru
+
+Start-Sleep -Seconds 2
+
+Write-Host "[*] Simulating process injection by spawning $Payload from the host process..." -ForegroundColor Yellow
 $process | ForEach-Object { 
-    Start-Process "inject.exe" -ArgumentList $process.Id
+    Start-Process $Payload -ArgumentList $_.Id
 }
-Write-Host "Process Injection attack simulation executed"
+
+Start-Sleep -Seconds 2
+Write-Host "[*] Process Injection attack simulation executed. Cleaning up host process..." -ForegroundColor Green
+Stop-Process -Id $process.Id -Force -ErrorAction SilentlyContinue
